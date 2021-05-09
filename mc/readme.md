@@ -1,14 +1,23 @@
-dependencies arm-none-eabi-gcc(for cross compiling) and qemu-arm (for running arm outputs)
+##Dependencies
 
+```bash
+arm-none-eabi-gcc //for cross compiling
+qemu-arm //for running arm outputs
+```
 
-to make a file use make file=filename
+##How to make and run
 
-example  make file=hw
+```bash
+make file=<filename> //to make(build/compile) the file
+make run file=<filename> //to run it use 
+make clean file=filename //to clean ones outputs use
+```
 
-to run it use make run file=filename
+####Example
+ (here hw is the name of the file )
 
-example make run file=hw
-
-to clean ones outputs use make clean file=filename
-
-example make clean file=hw
+```bash
+make file=hw
+make run file=hw
+make clean file=hw
+```
