@@ -10,7 +10,7 @@ qemu-arm //for running arm outputs
 ```bash
 make file=<filename> //to make(build/compile) the file
 make run file=<filename> //to run it use 
-make clean file=filename //to clean ones outputs use
+make clean file=<filename> //to clean ones outputs use
 ```
 
 ####Example
