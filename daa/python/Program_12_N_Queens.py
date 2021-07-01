@@ -26,4 +26,4 @@ def generate(perm, n):
             generate(perm,n)
         perm.pop()
  
-generate([],4)
+generate([],9)
