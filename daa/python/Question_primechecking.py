@@ -1,3 +1,5 @@
+# Not a part of the daa portion, but still an important algorithm to learn.
+
 import math
 def isPrime(num,div):
     if div == 1 or  div == 0 :  return True

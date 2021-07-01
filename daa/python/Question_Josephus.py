@@ -1,3 +1,4 @@
+# Not a part of the daa lab portion, but still an important algorithm to learn.
 # basically here we build from the bottom: 
 # when you are at the end, the safest place to be is in 0th place, ie start since only one person is left
 # one death earlier, it makes sense that you should not be the kth person from the start , ie if k is 3 and 2 people are left,
