@@ -1,3 +1,10 @@
+# # Q:6
+# Algorithm to implement string matching using horspool's algorithm
+# Time complexity : O(nlogn), where n is length of array. 
+# Space complexity : O(n) ,where we divide the problem into n subproblems
+
+
+
 def shifttable(string):
     dict = {}
     for i in range(0,len(string) - 1):

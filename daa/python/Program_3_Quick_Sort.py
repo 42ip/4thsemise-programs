@@ -1,9 +1,7 @@
-
-
-
-
-
-
+# Q:3
+# Algorithm to sort an array using Quick sort
+# Time complexity : O(nlogn), where n is length of array. 
+# Space complexity : O(n) ,where we divide the problem into n subproblems
 
 # INPUT PORTION
 # comment below if you want to use input
