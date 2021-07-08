@@ -1,4 +1,8 @@
-import copy
+# # Q:9
+# Algorithm to Implement 0/1 Knapsack problem using dynamic programming 
+#  Time compexity: O(nW), n = no. of items, W = weight of sack
+# Space complexity: O(nW) 
+ 
 
 # this is not the solution. but please understand this since it is the naive way of solving knapsack problem
 def knapsackBruteForce(items,sack):

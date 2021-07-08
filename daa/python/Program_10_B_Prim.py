@@ -1,18 +1,34 @@
+# # Q:10b
+# Algorithm to find the minimum cost span tree using Prims algorithm
+# Time complexity: O(vE) = O(n^2)
+# Space complexity: O(n)
 
 # aim of prim's alg0 :find the minimum cost span tree
 
-mat = [] # adjacency matrix
+# INPUT PORTION
+# uncomment below if you want to use preconfigured input
+mat = [[0.0,3,0,0,6,5],[3,0,1,0,0,4],[0,1,0,6,0,4],[0,0,6,0,8,5],[6,0,0,8,0,2],[5,4,4,5,2,0]] # adjacency matrix
 
-mat.append([0,3,0,0,6,5]) #for a
-mat.append([3,0,1,0,0,4])#b
-mat.append([0,1,0,6,0,4])#c
-mat.append([0,0,6,0,8,5])#d
-mat.append([6,0,0,8,0,2])#e
-mat.append([5,4,4,5,2,0])#f
+# uncomment below if you want to enter a matrix
+# print("Enter the number of nodes:",end = " ")
+# n = int(input())
+# adjmat = []
+# print("Enter the adjacency matrix as space seperated values")
+# for _ in range(n):
+#     inparr = input().split(sep=" ")
+#     for i in range(len(inparr)):
+#         if inparr[i] == "0":
+#             inparr[i] = 'inf'
+#     inparr = list(map(float,inparr))
+#     adjmat.append(inparr)
+# mat = adjmat
+
+# Conversion of unreachable nodes to infinity
 for i in range(len(mat)):
     for j in range(len(mat)):
         if mat[i][j] == 0:
             mat[i][j] = float('inf')
+
 
 
 visited = set()
@@ -52,7 +68,7 @@ while(nodes[0][1] != float("inf")):
     visited.add(a[0])
     makeinf(a[0])
     update()
-    print(nodes)
+    # print(nodes)
 
 
 re = []
