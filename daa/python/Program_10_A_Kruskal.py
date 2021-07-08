@@ -1,19 +1,17 @@
+# # Q:10
+# Algorithm to find the minimum cost span tree using kruskal algorithm
+#  Time complexity: O(vE) = O(n^2) but O(n^3) in our case due to adjacency matrix
+# Space complexity: O(n) 
+
+
 # Aim of kruskal : we keep selecting the smallest cost as long as both nodes are not in the visited matrix
 import numpy
-mat = [] # adjacency matrix
-
-mat.append([0,3,0,0,6,5]) #for a
-mat.append([3,0,1,0,0,4])#b
-mat.append([0,1,0,6,0,4])#c
-mat.append([0,0,6,0,8,5])#d
-mat.append([6,0,0,8,0,2])#e
-mat.append([5,4,4,5,2,0])#f
-inf = float("inf")
+mat = [[0.0,3,0,0,6,5],[3,0,1,0,0,4],[0,1,0,6,0,4],[0,0,6,0,8,5],[6,0,0,8,0,2],[5,4,4,5,2,0]] # adjacency matrix
 visited = set()
 for i in range(len(mat)):
     for j in range(len(mat)):
         if mat[i][j] == 0:
-            mat[i][j] = inf
+            mat[i][j] = float('inf')
 
 def kruskal():
     global mat
@@ -24,6 +22,7 @@ def kruskal():
     edges = 0
     while (edges < n - 1):
         min = inf = float("inf")
+        u = v = a = b = 0
         for i in range(n):
             for j in range(n):
                 if mat[i][j] < min:
