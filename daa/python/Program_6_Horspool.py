@@ -13,7 +13,7 @@ string = 'i wanted to say hello everyone'
 print('Enter string') ; string = input()
 print('Enter pattern'); pattern = input()
 
-
+# PROGRAM PORTION
 def shifttable(string):
     dict = {}
     for i in range(0,len(string) - 1):
