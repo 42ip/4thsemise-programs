@@ -1,0 +1,24 @@
+	AREA PROG,CODE,READONLY
+N RN 0
+MIN RN 1
+TABLE RN 2
+TP RN 3
+ENTRY
+	LDR TABLE,=LIST
+	MOV N,#0X4
+	MOV MIN,[TABLE],#4
+LOOP
+	LDR TP,[TABLE],#4
+	CMP TP,MIN
+	BLLS MINIMUM ;branch if cmp returns lesser than or equal to
+	CMP N,#0
+	SUBS N,#1
+	BNE LOOP
+GO B GO
+
+MINIMUM
+	MOV MIN,TP
+	BX LR	;fml
+	
+LIST DCD &45,&23,&22,&24,&34
+	END
