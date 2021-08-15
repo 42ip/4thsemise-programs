@@ -1,6 +1,6 @@
 ;ALP to find the sum of cubes of the first n natural numbers
 
-; The sum of first n cubes is given by : (n(n+1))^2
+; The sum of first n cubes is given by : (n(n+1)/2)^2
 ;										 (   2  )
 	AREA PROG2,CODE,READONLY
 
